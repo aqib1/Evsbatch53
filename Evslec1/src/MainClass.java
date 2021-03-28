@@ -13,11 +13,21 @@ public class MainClass {
 	
 	
 	public static void main(String[] args) {
-		Person person = new Person();
-		person.setId(10);
-		person.setCnic("IU1Y8I168290-29876938");
-		person.setEmail("aqib@gmail.com");
-		System.out.println(person);
+//		Student student = new Student();
+//		student.setCnic("kjhikyed5265987390=920322");
+//		System.out.println(student.getCnic());
+		
+		Cat cat = new Cat();
+		
+		
+		
+		
+//		
+//		Person person = new Person();
+//		person.setId(10);
+//		person.setCnic("IU1Y8I168290-29876938");
+//		person.setEmail("aqib@gmail.com");
+//		System.out.println(person);
 		
 		
 //		Random random = new Random();

@@ -39,7 +39,7 @@ public class Person {
 	}
 
 	public String getCnic() {
-		return cnic;
+		return "ABC - " + cnic;
 	}
 
 	public void setEmail(String email) {
