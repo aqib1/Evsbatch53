@@ -13,11 +13,25 @@ public class MainClass {
 	
 	
 	public static void main(String[] args) {
+//		Patient patient = new Patient();
+//		System.out.println(patient.getId());
+//		System.out.println(Patient.CNIC);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //		Student student = new Student();
 //		student.setCnic("kjhikyed5265987390=920322");
 //		System.out.println(student.getCnic());
 		
-		Cat cat = new Cat();
+//		Cat cat = new Cat();
 		
 		
 		
