@@ -9,7 +9,7 @@ public class MainClass {
 		animal.test();
 		
 		
-		Chicken c = (Chicken)animal;
+		Chicken c = (Chicken)animal; // downcasting/..
 		c.feed(12);
 //		Chicken chicken =(Chicken)animal;
 //		chicken.feed(12);
