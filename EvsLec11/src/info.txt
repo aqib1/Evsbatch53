@@ -1,0 +1,30 @@
+  => Object ->
+			Throwable ->
+				Error -> 
+					IOError ->
+					OutOfMemoryError ->
+					FatelError ->
+				Exception ->
+					(Compile time/ Checked Exception) (needed try/catch)
+					IOException
+					FileNotFoundException
+					SocketException
+					InetAdressException
+					JsonParserException
+					
+					(Runtime time/ Unchecked exception) (non necessary try catch)
+					RuntimeException
+						ArrayIndexOutofBoundException->
+						NumberFormatException->
+						StringOutOfBoundException->
+						NullPointerException->
+					
+					
+					abc() throw NullPointerException {
+					}
+					
+					try {
+					abc();
+					} catch(IOException e) {
+					//todo: 
+					}

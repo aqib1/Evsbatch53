@@ -3,6 +3,14 @@ import java.util.Objects;
 import java.util.Queue;
 import java.util.Stack;
 
+
+// 25 - 60k - 80k (100k+)
+// 150k+
+// 180k - 250k 
+// 300k+ 
+// 500k+
+
+
 enum Traversal {
 	BFS, // In level order
 	IN_ORDER, //
