@@ -112,13 +112,13 @@ public class MainClass {
 //			e.printStackTrace();
 //		}
 		// FileWiter
-		String data = "Hi there everyone!!!\n";
-		try(BufferedWriter bw = new BufferedWriter(
-				new FileWriter(file, true))) {
-			bw.write(data.toCharArray());
-			bw.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		String data = "Hi there everyone!!!\n";
+//		try(BufferedWriter bw = new BufferedWriter(
+//				new FileWriter(file, true))) {
+//			bw.write(data.toCharArray());
+//			bw.flush();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 }
