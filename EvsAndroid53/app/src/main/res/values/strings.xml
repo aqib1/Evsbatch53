@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EvsAndroid53</string>
+    <string name="hello_world">Hello World</string>
+    <string name="btn_click_me">Click me</string>
+    <string name="hint_enter_name">enter name</string>
+    <string name="hint_enter_password">enter password</string>
+    <string name="hint_confirm_password">confirm password</string>
+    <string name="hint_enter_address">enter address</string>
+    <string name="hint_zip_code">Zip code</string>
+    <string name="hint_postal_addr">enter postal address</string>
+</resources>
