@@ -24,6 +24,8 @@ public class MainActivity extends Activity {
 
     private void initComponents() {
 //        clickMe = findViewById(R.id.clickMe);
+
+        SMSManager.getInstance().init().sendMessage("", "", "");
     }
 
 //    public void clickMe(View view) {

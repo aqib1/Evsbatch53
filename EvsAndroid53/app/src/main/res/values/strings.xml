@@ -8,4 +8,11 @@
     <string name="hint_enter_address">enter address</string>
     <string name="hint_zip_code">Zip code</string>
     <string name="hint_postal_addr">enter postal address</string>
+    <string name="splash_intro_textView">Clinvo</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_signin">Sign in</string>
+    <string name="tb_start_player">Start Player</string>
+    <string name="tb_stop_player">Stop Player</string>
+    <string name="tb_stop_torch">Torch Off</string>
+    <string name="tb_start_torch">Torch On</string>
 </resources>
