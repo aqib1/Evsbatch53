@@ -11,8 +11,14 @@ import android.widget.EditText;
 
 import com.example.evsandroid53.R;
 import com.example.evsandroid53.SharedPreferences.SPManager;
+import com.example.evsandroid53.db.AppDatabase;
+import com.example.evsandroid53.db.helper.RoomDbHelper;
 import com.example.evsandroid53.db.helper.db.UserDbHelper;
 import com.example.evsandroid53.entities.User;
+import com.example.evsandroid53.entities.UserEntity;
+import com.example.evsandroid53.exceptions.DataNotFoundException;
+
+import java.util.ArrayList;
 
 public class SigninFragment extends Fragment {
 
@@ -33,13 +39,41 @@ public class SigninFragment extends Fragment {
         signin.setOnClickListener((v) -> {
             //do your code here whatever you need
 //            SPManager.getInstance().addString("password", password.getText().toString());
-            UserDbHelper userDbHelper = new UserDbHelper(getContext());
+            try(UserDbHelper userDbHelper = new UserDbHelper(getContext())) {
             User user = new User();
             user.setUserName(userName.getText().toString());
             user.setUserPassword(password.getText().toString());
-            userDbHelper.insert(user);
-            userDbHelper.close();
+            userDbHelper.delete(user);
+            } catch (Exception e) {
+            }
+
+            UserEntity userEntity = new UserEntity();
+            userEntity.setFirstName(userName.getText().toString());
+            userEntity.setLastName(password.getText().toString());
+           AppDatabase app =  RoomDbHelper.getInstance(getContext()).getDb();
+            app.userDao().insertAll(userEntity);
+            app.userDao().getByFirstAndLastName(userEntity.getFirstName(), userEntity.getLastName());
         });
+
+        /*
+
+        *
+        updateUser.setOnClickListener((v) -> {
+            <oldusername + oldpassword> = sharedpref
+            newUserName + newPassword = form
+            User existingUser = new User();
+            existingUser.setPassword(oldpassword);
+            existingUser.setUserName(oldusername);
+
+            User updatedUser = new User();
+
+            UserDbHelper userDbHelper = new UserDbHelper(getContext());
+            userDbHelper.update(existingUser, udpatedUser);
+            userDbHelper.close();
+
+        });
+
+        **/
 
 
 //        SPManager.getInstance().readString("password");

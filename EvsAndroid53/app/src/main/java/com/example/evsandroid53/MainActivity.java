@@ -7,6 +7,9 @@ import android.widget.Button;
 //import android.view.View;
 import android.widget.Toast;
 
+import com.example.evsandroid53.db.helper.db.UserDbHelper;
+import com.example.evsandroid53.entities.User;
+
 public class MainActivity extends Activity {
 //    private Button clickMe;
     @Override
@@ -23,6 +26,12 @@ public class MainActivity extends Activity {
     }
 
     private void initComponents() {
+//        UserDbHelper userDbHelper = new UserDbHelper(this);
+//        User user = new User();
+//        user.setUserName(userName.getText().toString());
+//        user.setUserPassword(password.getText().toString());
+//        userDbHelper.insert(user);
+//        userDbHelper.close();
 //        clickMe = findViewById(R.id.clickMe);
 
         SMSManager.getInstance().init().sendMessage("", "", "");
